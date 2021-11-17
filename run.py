@@ -1,26 +1,31 @@
 def welcome_message():
     print("Good day player ! Try to guess the hidden word to get to your destination.")
-
-game_options()
-choose_game = input ('Choose a category: European cities (press G) or European countries (press Z).')
-if user_choice.upper() == 'G':
-        random(cities)
-elif user_choice.upper() == 'Z':
-       random(cities)
 welcome_message()
+choose_game = input ('Choose a category: European cities (press G) or European countries (press Z).')
+if choose_game.upper() == 'G':
+      # print.random (cities)
+       import random
+       cities = ['Zagreb','Dublin','Amsterdam','Madrid','Frankfurt','Rotterdam','Reykjavik','Budapest','Athens','Chisinau']
+       #str.replace = ("_ " * len(cities))
+       #remove_letters = cities.replace('', '_')
+       print(random.choice(cities))
+      
 
 
-#def european_cities(cities)
-#print(random.choice(european_cities)) 
-#def european_countries(countries)
-#print(random.choice(european_countries)) 
-
-cities = ['zagreb','dublin','amsterdam','madrid','frankfurt', 'rotterdam', 'reykjavik','budapest','athens','chisinau']
-countries = ['croatia','netherlands','ireland','germany','poland','slovakia','malta','sweeden','greece','france']
-
-def start_game
+elif choose_game.upper() == 'Z':
+       import random
+       countries = ['Croatia','Netherlands','Ireland','Germany','Poland','Slovakia','Malta','Sweeden','Greece','France']
+       print(random.choice(countries))
 
 
-def guessing_letters
+#def start_game():
+   # str.replace("cities", "_" ) 
+  #  str.replace("countries", "_") 
+   # underscore = ("_ " * len(cities))
 
-def end_game
+  #  start_game()
+
+#def guessing_letters()
+
+
+#def end_game
