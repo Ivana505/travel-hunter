@@ -10,11 +10,11 @@ countries = [
 def get_random(word):
 	rand_word = random.choice(word)
 	print("_ " * len(rand_word))
-	print(rand_word)
+	
 
 
-def welcome_message(pizza):
-	print(f"Good day {pizza} ! Try to guess the hidden word to get to your destination.")
+def welcome_message(player):
+	print(f"Good day {player} ! Try to guess the hidden word to get to your destination.")
 
 
 name = input("What is your name?\n")
@@ -23,21 +23,24 @@ choose_game = input('Choose a category: European cities (press G) or European co
 
 if choose_game.upper() == 'G':
 	get_random(cities)
-	# print.random (cities)
-	# str.replace = ("_ " * len(cities))
-	# remove_letters = cities.replace('', '_')
 elif choose_game.upper() == 'Z':
 	get_random(countries)
 
 
-# def start_game():
-	# str.replace("cities", "_" ) 
-	# str.replace("countries", "_") 
-	# underscore = ("_ " * len(cities))
+def play_game(guess):
+	guessing = input("Enter letter: \n")
+	letter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+	while letter in random_word:
+		print("You guessed the letter, guess again !")
+	else:
+		print("Try again !")
+#while letter in rand_word:
+	print("Great, keep guessing")
+#if letter not in rand_word:
+#	break
+	#print("Try again")
 
-	# start_game()
-
-# def guessing_letters()
+	
 
 
 # def end_game
