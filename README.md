@@ -128,8 +128,9 @@ blabla
 
 ## Deployment
 
+Just cloning function under local.
 The site was deployed to Github pages using following steps: 
-   - Login to Github and go into repository Ivana505/funky-keyboard
+   - Login to Github and go into repository Ivana505/travel-hunter
    - Click on settings and scroll down to Pages section on the page
    - Under the source heading select the master branch option and click save
    - The project has now been deployed and wait for approximate 10 minutes for the link to become active
