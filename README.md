@@ -136,7 +136,21 @@ The site was deployed to Github pages using following steps:
    - Refresh the page and click on the link to view the live site
   
 
+The site was deployed to [Heroku](https://heroku.com/) pages using following steps: 
+   - Sign up or Login to Heroku 
+   - Click on the "NEW APPLICATION"
+   - Under the source heading select the master branch option and click save
+   - The project has now been deployed and wait for approximate 10 minutes for the link to become active
+   - Refresh the page and click on the link to view the live site
+
 The live site can be previewed [here](https://travel-hunter1.herokuapp.com/)
+
+![deployment1](documentation/images/heroku-deployment1.png)
+![deployment2](documentation/images/heroku-deployment2.png)
+![deployment3](documentation/images/heroku-deployment3.png)
+![deployment4](documentation/images/heroku-deployment4.png)
+![deployment5](documentation/images/heroku-deployment5.png)
+![deployment6](documentation/images/heroku-deployment6.png)
 
 ### Local Deployment
 
