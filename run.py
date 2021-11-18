@@ -6,41 +6,71 @@ countries = [
 	'Croatia', 'Netherlands', 'Ireland', 'Germany', 'Poland',
 	'Slovakia', 'Malta', 'Sweeden', 'Greece', 'France']
 
+score = 8
+
+
+def start_game():
+	welcome_message()
+	choose_game()
+
+
+def welcome_message():
+	name = input("What is your name?\n")
+	print(f"Good day {name} ! Try to guess the hidden word to get to your destination.")
+
+def choose_game():
+	game_choice = input('Choose a category: European cities (press G) or European countries (press Z).\n').upper()
+	if game_choice == 'G':
+		chosen_city = get_random(cities)
+		play_game(chosen_city)
+	elif game_choice == 'Z':
+		chosen_country = get_random(countries)
+		play_game(chosen_country)
+
 
 def get_random(word):
 	rand_word = random.choice(word)
-	print("_ " * len(rand_word))
-	
+	#print("_ " * len(rand_word))
+	return rand_word
 
 
-def welcome_message(player):
-	print(f"Good day {player} ! Try to guess the hidden word to get to your destination.")
+def play_game(word):
+	print(word)
+	letter = []
+	board = ''
+	for character in word:
+		board += '_ '
+	print(board)
+	while True:
+		guessing = input("Enter letter: \n").upper()
+		if guessing in word:
+			print("Good guess")
+			board[board.index(guessing)] = guessing
+			print(board)
+			break
+		else:
+			print("Try again !")
+			continue
+	    
 
 
-name = input("What is your name?\n")
-welcome_message(name)
-choose_game = input('Choose a category: European cities (press G) or European countries (press Z).\n')
-
-if choose_game.upper() == 'G':
-	get_random(cities)
-elif choose_game.upper() == 'Z':
-	get_random(countries)
 
 
-def play_game(guess):
-	guessing = input("Enter letter: \n")
-	letter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-	while letter in random_word:
-		print("You guessed the letter, guess again !")
-	else:
-		print("Try again !")
+
+start_game()
+
+
+
+
+
+
+
+
 #while letter in rand_word:
-	print("Great, keep guessing")
+	#print("Great, keep guessing")
 #if letter not in rand_word:
 #	break
 	#print("Try again")
 
 	
-
-
 # def end_game
