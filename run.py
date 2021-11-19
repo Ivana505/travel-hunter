@@ -26,68 +26,41 @@ def choose_game():
 		chosen_country = get_random(countries)
 		play_game(chosen_country)
 
-
 def get_random(word):
 	rand_word = random.choice(word)
-	print("_ " * len(rand_word))
+#print("_ " * len(rand_word))
 	return rand_word
 
 
-def play_game(word):
-	print(word)
-	print("This word is", len(word), "letters long.")
-	while True:
-		guessing = input("Guess a letter: \n").upper()
-		if guessing in word:
-			print("Good guess")
-			get_guess()
-			game_end()
-			break
-		else:
-			print("Try again !")
-			continue
 
 
-def get_guess():
-	points = 8
-	guessed = ''
-	valid_entry =set('abcdefghijklmnopqrstuvwz')
-	while len(word) > 0:
-		rand_word = ""
-		missed = 0
+def play_game(rand_word):
+	attempts = 8
+	guessed_letters = []
+	done = False
+	while not done:
+		for letter in rand_word:
+			if letter.upper() in guessed_letters:
+				print(letter, end=" ")
+			else:
+				print("_ ", end=" ")
+		print(" ")
+			
+	guess = input(f"Amount of the attempts left {attempts}, Next Guess: ")
+	guessed_letters.append(guess.upper())
+	if guess.upper() not in rand_word.upper():
+		attempts -=1
+		if attempts == 0:
+			done = True
+	for letter in rand_word:
+		 if letter.upper() not in guessed_letters:
+			 done = False
 
-	for letter in word:
-		if leter in guessed:
-			rand_word = rand_word + letter
-		else:
-			rand_word = rand_word + "_ "
-			get_guess()
-
-
-
-def game_end():
-	guessed = True
-	while guessed:
-		print = input("Would you like to continue playing the game? y/n ")
-		if start_game() == "y":
-			print("You have decided to continue playing the game.")
-		elif start_game() == "n":
-			print("Now closing the game...")
-			guessed = False
-		else:
-			print("That is not a valid option. Please try again.")
-			print("Thanks for playing")
-
-	
-
-	
-
-
-
-	
-
-
-
+	if done:
+		print("well done")
+	else:
+		print("you lost!")
+ 
 
 start_game()
 
