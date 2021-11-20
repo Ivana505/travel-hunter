@@ -44,7 +44,7 @@ def play_game(rand_word):
 				print(letter, end=" ")
 			else:
 				print("_ ", end=" ")
-		print(" ")
+		print("")
 			
 	guess = input(f"Amount of the attempts left {attempts}, Next Guess: ")
 	guessed_letters.append(guess.upper())
