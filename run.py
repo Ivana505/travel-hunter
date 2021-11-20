@@ -45,29 +45,31 @@ def play_game(rand_word):
 			else:
 				print("_ ", end=" ")
 		print("")
-			
-	guess = input(f"Amount of the attempts left {attempts}, Next Guess: ")
-	guessed_letters.append(guess.upper())
-	if guess.upper() not in rand_word.upper():
-		attempts -=1
-		if attempts == 0:
-			done = True
-	for letter in rand_word:
-		 if letter.upper() not in guessed_letters:
-			 done = False
+		guess = input(f"Amount of the attempts left {attempts}, Next Guess: ")
+		guessed_letters.append(guess.upper())
+		if guess.upper() not in rand_word.upper():
+			attempts -=1
+			if attempts == 0:
 
+				done = True	
 	if done:
 		print("well done")
 	else:
 		print("you lost!")
- 
-
-start_game()
 
 
-
-
-
+# def game_end():
+#    guessed = True
+#    while guessed:
+#        print = input("Would you like to continue playing the game? y/n ")
+#        if start_game() == "y":
+#            print("You have decided to continue playing the game.")
+#        elif start_game() == "n":
+#            print("Now closing the game...")
+#            guessed = False
+#         else:
+#            print("That is not a valid option. Please try again.")
+#            print("Thanks for playing")
 
 #check_guess():
 
