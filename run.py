@@ -1,3 +1,4 @@
+import pyfiglet
 import random
 cities = [
 	'ZAGREB', 'DUBLIN', 'AMSTERDAM', 'MADRID', 'FRANKFURT',
@@ -13,6 +14,7 @@ def start_game():
 
 
 def welcome_message():
+	print(pyfiglet.figlet_format("Welcome to travel hunter", justify="center"))
 	name = input("What is your name?\n")
 	print(f"Good day {name} ! Try to guess the hidden word to get to your destination. You have 8 tries. ")
 
@@ -25,13 +27,14 @@ def choose_game():
 	elif game_choice == 'Z':
 		chosen_country = get_random(countries)
 		play_game(chosen_country)
+	else:
+		print ("I do not understand, please try again. Press G or Z.")
+	welcome_message()
+
 
 def get_random(word):
 	rand_word = random.choice(word)
-#print("_ " * len(rand_word))
 	return rand_word
-
-
 
 
 def play_game(rand_word):
@@ -50,12 +53,14 @@ def play_game(rand_word):
 		if guess.upper() not in rand_word.upper():
 			attempts -=1
 			if attempts == 0:
-
+                
 				done = True	
 	if done:
-		print("well done")
+		print("You lost ! ")
 	else:
-		print("you lost!")
+		print("You won ! ")
+		
+start_game()
 
 
 # def game_end():
