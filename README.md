@@ -43,28 +43,16 @@ As a user I would like to:
 
 ## Design Choices
 
-Font choices
-
-I have decided to use 
-
- Indie Flower font-family
-    ![indie flower font family]
- Lato font-family
-    ![lato font family]
-
 Icons
 
-- Social Media Icons [Github](https://www.github.com/) and [LinkedIn](https://ie.linkedin.com) are centered and added to the bottom of the page where user will be able to find further Information about me. 
+- Social Media Icons [Github](https://www.github.com/) and [LinkedIn](https://ie.linkedin.com) 
 
 ## Color scheme and styling
 
  - I have decided to use 4 color combination scheme for the page: pink, red, black and white.
- - Background color of the page is pink. Black color is used for headings and black and white combination for the piano keyboard.
- - Red is used as a notification that the key has been pressed.
- - Buttons and modal are styled with further colors and opacity of the black color.
+
 Note colors below : 
 ![main colors]()
-![buttons and modal colors]()
 
 
 ## Flowchart
@@ -135,22 +123,35 @@ The site was deployed to Github pages using following steps:
    - Under the source heading select the master branch option and click save
    - The project has now been deployed and wait for approximate 10 minutes for the link to become active
    - Refresh the page and click on the link to view the live site
-  
+
+  Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Ivana505/travel-hunter)
 
 The site was deployed to [Heroku](https://heroku.com/) pages using following steps: 
    - Sign up or Login to Heroku 
-   - Click on the "NEW APPLICATION"
-   - Under the source heading select the master branch option and click save
-   - The project has now been deployed and wait for approximate 10 minutes for the link to become active
-   - Refresh the page and click on the link to view the live site
+   - Click on the "NEW APPLICATION" and create an App name and choose your region
+   - Click on "Deploy" and choose your deployment method
+   - If you are connecting with Github choose your main branch and find your repository
+   - Add config vars and buildpacks if required
+   - Click on deploy manually or automatically
+   - The project has now been deployed
+   - When deployed click on view
+   - If you click on settings on the main menu bar you will find your Heroku git URL
+   
 
 The live site can be previewed [here](https://travel-hunter1.herokuapp.com/)
 
 ![deployment1](documentation/images/heroku-deployment1.png)
+
 ![deployment2](documentation/images/heroku-deployment2.png)
+
 ![deployment3](documentation/images/heroku-deployment3.png)
+
 ![deployment4](documentation/images/heroku-deployment4.png)
+
 ![deployment5](documentation/images/heroku-deployment5.png)
+
 ![deployment6](documentation/images/heroku-deployment6.png)
 
 ### Local Deployment
