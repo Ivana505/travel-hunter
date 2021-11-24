@@ -39,8 +39,9 @@ def get_random(word):
 
 def play_game(rand_word):
 	attempts = 8
-	letters_remaining = 0
+	#letters_remaining = 0
 	guessed_letters = []
+	word_completion = "_" * len(rand_word)
 	done = False
 	while not done:
 		for letter in rand_word:
@@ -48,7 +49,7 @@ def play_game(rand_word):
 				print(letter, end=" ")
 			else:
 				print("_ ", end=" ")
-				# letters_remaining += 1
+				# letters_remaining -= 1
 				# print(letters_remaining)
 		print("")
 		guess = input(f"Amount of the attempts left {attempts}, Next Guess: ")
@@ -57,16 +58,21 @@ def play_game(rand_word):
 			attempts -= 1
 			if attempts == 0:   
 				done = True
-		else:
-			letters_remaining -= 1
-		print(letters_remaining)
-		if letters_remaining == 0:
-			done = True
+				print("You lost")
+			else:
+				guessed = True
+				word_completion = rand_word
+				print("you win")
+		#else:
+			#letters_remaining -= 1
+		#print(letters_remaining)
+		#if letters_remaining == 0:
+		#	done = True
 
-	if done:
-		print("You lost ! ")
-	else:
-		print("You won ! ")
+	#if done:
+	#	print("You lost ! ")
+	#else:
+		#print("You won ! ")
 		
 start_game()
 
