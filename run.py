@@ -41,7 +41,7 @@ def play_game(rand_word):
 	attempts = 8
 	#letters_remaining = 0
 	guessed_letters = []
-	correct_letters = []
+
 	#word_completion = "_" * len(rand_word)
 	#joinedList = ''.join(guessed_letters)
 	done = False
@@ -62,18 +62,24 @@ def play_game(rand_word):
 		# 	   print('Yes! The secret word is"' + rand_word +'"! You have won!')
 		# 	   break
 
-		if len(correct_letters) == len(rand_word): 
-				print('Yes! The secret word is"' + rand_word +'"! You have won!')
-				break
-                    
-			
-
 		if guess.upper() not in rand_word.upper():
-			attempts -= 1
-			if attempts == 0:   
-				done = True
-				print("The secret word was: "+ rand_word.upper())
-				break
+				attempts -= 1
+				if attempts == 0:   
+					done = True
+					print("The secret word was: "+ rand_word.upper())
+					break
+		
+		done = True
+		for letter in rand_word:
+			if letter.upper() not in guessed_letters:
+				done = False
+	if done:
+		print ("you iwn")
+	else:
+		print("game over")
+                    
+
+	
 
 			# if world_completion:
 			# 	done = False
