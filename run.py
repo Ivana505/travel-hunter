@@ -28,7 +28,7 @@ def choose_game():
 		chosen_country = get_random(countries)
 		play_game(chosen_country)
 	else:
-		print ("I do not understand, please try again. Press G or Z.")
+		print("I do not understand, please try again. Press G or Z.")
 	welcome_message()
 
 
@@ -41,7 +41,8 @@ def play_game(rand_word):
 	attempts = 8
 	#letters_remaining = 0
 	guessed_letters = []
-	word_completion = "_" * len(rand_word)
+	#word_completion = "_" * len(rand_word)
+	#joinedList = ''.join(guessed_letters)
 	done = False
 	while not done:
 		for letter in rand_word:
@@ -49,20 +50,65 @@ def play_game(rand_word):
 				print(letter, end=" ")
 			else:
 				print("_ ", end=" ")
-				# letters_remaining -= 1
-				# print(letters_remaining)
 		print("")
 		guess = input(f"Amount of the attempts left {attempts}, Next Guess: ")
 		guessed_letters.append(guess.upper())
+
+		if len(guessed_letters) == len(rand_word):   
+		   attempts != 0
+		   if attempts != 0:
+			   done = True
+			   print('Yes! The secret word is"' + rand_word +'"! You have won!')
+			   break
+
 		if guess.upper() not in rand_word.upper():
 			attempts -= 1
 			if attempts == 0:   
 				done = True
-				print("You lost")
-			else:
-				guessed = True
-				word_completion = rand_word
-				print("you win")
+				print("The secret word was: "+ rand_word.upper())
+				break
+
+			# if world_completion:
+			# 	done = False
+			# 	print('Yes! The secret word is "' + rand_word +'"! You have won!')
+			# if len(rand_word) == len(guessed_letters):
+			#    print('\nYou won the Game!')
+			#    break
+				
+
+			# elif word_completion() == rand_word.upper():
+			# 	 print("Yay! you won.")
+			# 	 break
+
+
+			# if len(guessed_letters) == len(rand_word):
+			# 	guessed_letters == rand_word
+			# 	done = True
+			# 	print("you win")
+
+			# if joinedList.upper() == rand_wordupper():
+            #     print("Yay! you won.")
+            #     break
+            # elif attempts == 0:
+            #     print("Too many Guesses!, Sorry better luck next time.")
+				
+			#if joinedList.upper() == rand_word.upper():
+			#	done = True
+			#	print("Yay! you won.")
+				#break
+			
+			#if guessed = True:
+			#	word_completion = rand_word
+			#	print("well done")
+			#	break
+
+		#if guess.upper() in rand_word.upper():
+		#	word_completion = rand_word
+		#	done = True
+			#print("you win")
+		#	break
+				
+			
 		#else:
 			#letters_remaining -= 1
 		#print(letters_remaining)
