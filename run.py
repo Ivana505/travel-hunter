@@ -1,11 +1,12 @@
 import pyfiglet
 import random
+import sys
 cities = [
-	'ZAGREB', 'DUBLIN', 'AMSTERDAM', 'MADRID', 'FRANKFURT',
-	'ROTTERDAM', 'REYKJAVIK', 'BUDAPEST', 'ATHENS', 'CHISINAU']
+    'ZAGREB', 'DUBLIN', 'AMSTERDAM', 'MADRID', 'FRANKFURT',
+    'ROTTERDAM', 'REYKJAVIK', 'BUDAPEST', 'ATHENS', 'CHISINAU']
 countries = [
-	'CROATIA', 'NETHERLANDS', 'IRELAND', 'GERMANY', 'POLAND',
-	'SLOVAKIA', 'MALTA', 'SWEDEN', 'GREECE', 'FRANCE']
+    'CROATIA', 'NETHERLANDS', 'IRELAND', 'GERMANY', 'POLAND',
+'SLOVAKIA', 'MALTA', 'SWEDEN', 'GREECE', 'FRANCE']
 
 
 def start_game():
@@ -83,19 +84,20 @@ def game_end():
 			print(" Yes is a good answer, enjoy playing again ! ")
 			choose_game()
 		elif again == 'N':
-			print("Oh no ! You are leaving, I hope to see you again soon ! .\n")
+			print("Oh no ! You are leaving, I hope to see you again soon ! \n")
 			goodbye_message()
 		else:
 			print("I do not understand, please try again. Press Y or N.")
 			game_end()
 
+
+
 def goodbye_message():
 	print(pyfiglet.figlet_format("Goodbye ! ", justify="center"))
-	
+	sys.exit()
+    
 
 start_game()
-
-
 
 
 
