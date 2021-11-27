@@ -52,15 +52,6 @@ Flowchart is created with [Lucidchart](https://www.lucidchart.com/pages/) during
 
 To view all testing documentation please refer to [TESTING.md](TESTING.md)
 
-## Deployment
-
-The site was deployed to Github pages using following steps: 
-   - Login to Github and go into repository Ivana505/travel-hunter
-   - Click on settings and scroll down to Pages section on the page
-   - Under the source heading select the master branch option and click save
-   - The project has now been deployed and wait for approximate 10 minutes for the link to become active
-   - Refresh the page and click on the link to view the live site
-
 ### Local Deployment
 
 In order to make a local copy of this repository, you can type the following into your IDE Terminal:
@@ -76,11 +67,17 @@ The site was deployed to [Heroku](https://heroku.com/) pages using following ste
    - Click on the "NEW APPLICATION" and create an App name and choose your region
    - Click on "Deploy" and choose your deployment method
    - If you are connecting with Github choose your main branch and find your repository
-   - Add config vars and buildpacks if required
+   - Add config vars PORT = 8000 and buildpacks python and nodejs
    - Click on deploy manually or automatically
    - The project has now been deployed
    - When deployed click on view
    - If you click on settings on the main menu bar you will find your Heroku git URL
+
+    To install the required packages for this application, type the following:
+pip3 install -r requirements.txt
+import pyfiglet
+import random
+import sys
    
 
 The live site can be previewed [here](https://travel-hunter1.herokuapp.com/)
@@ -98,11 +95,11 @@ The live site can be previewed [here](https://travel-hunter1.herokuapp.com/)
 ![deployment6](documentation/images/heroku-deployment6.png)
 
 
-  
   # Languages and technologies used
-- [Python](https://www.python.org/)
-- [Github](https://github.com/)
-- [Git](https://git-scm.com/)
+- [Python](https://www.python.org/) - used for core programming language and logic
+- [Github](https://github.com/) - used for securely storing the code online
+- [Git](https://git-scm.com/) - used for version control
+- [Gitpod](https://www.gitpod.io/) - used for online cloud IDE and development
 
 
 ## Credits and Acknowledgements
