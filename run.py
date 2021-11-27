@@ -55,9 +55,6 @@ def choose_game():
     choose_game()
 
 
-	# def enter_check():
-	# 		if (len(guessed_letters) != 1) or (letter not in guessed_letters):
-	# 			raise ValueError("Only a single letter is allowed")
 
 # def enter_check():
 #     if len(guess) != 1:
@@ -65,6 +62,18 @@ def choose_game():
 #     elif guess in guessed_letters:
 #         print('You have already guessed that letter. Choose again.')
     
+
+
+def enter_check():
+    inputChar = input("Enter single character: ")
+    
+    while True:
+        if inputChar.lower() in "abcdefghijklmnopqrstuvwxyz" and len(inputChar) == 1:
+            break
+        
+        inputChar = input("Enter single character: ")
+
+    return inputChar
 
 
 def get_random(word):
@@ -78,13 +87,13 @@ def play_game(rand_word):
     done = False
     while not done:
         for letter in rand_word:
-	              #enter_check()
             if letter.upper() in guessed_letters:
                 print(letter, end=" ")
             else:
                     print("_ ", end=" ")
         print("")
-        guess = input(f"\nAmount of the attempts left {attempts}, Next Guess: ")
+        print(f"\nAmount of the attempts left {attempts}, Next Guess \n")
+        guess = enter_check()
         guessed_letters.append(guess.upper())
 
         if guess.isalpha() and guess.upper() not in rand_word.upper():
@@ -104,6 +113,7 @@ def play_game(rand_word):
             print(f"You guessed secret word, it is: {rand_word.upper()}")
             print("YOU WIN !")
             game_end()
+
 
 
 def game_end():
