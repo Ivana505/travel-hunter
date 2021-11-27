@@ -59,6 +59,13 @@ def choose_game():
 	# 		if (len(guessed_letters) != 1) or (letter not in guessed_letters):
 	# 			raise ValueError("Only a single letter is allowed")
 
+# def enter_check():
+#     if len(guess) != 1:
+#         print('Please enter a single letter.')
+#     elif guess in guessed_letters:
+#         print('You have already guessed that letter. Choose again.')
+    
+
 
 def get_random(word):
     rand_word = random.choice(word)
