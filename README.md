@@ -1,9 +1,22 @@
 # Travel Hunter
-Travel Hunter is a website for anyone who likes guessing games like hangman.
-You need to guess the word to get to your destination.
-You can access the website [here](https://travel-hunter1.herokuapp.com/).
+Travel Hunter is a game for anyone who likes guessing games like hangman.
+In this game you need to guess a hidden word to get to your destination as it is travel related.
+
+You need to guess hidden European City or Country.
+
+To start playing, please click [here](https://travel-hunter1.herokuapp.com/).
 
 ![landing page](documentation/images/landing-page.png)
+
+## How to play
+  - Hangman game is a logic guessing game. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Hangman_(game)).
+    - In this version player enters their name, after the name has been entered instructions show.
+    - Player then chooses a category and tries to guess a hidden word showing with underscores.
+    - Player needs to remember letters tried.
+    - If player tries to guess same letter twice: 
+    1. If letter is in the word player will not loose attempt.
+    2. If letter is not in the word player will loose attempt.
+    - If the word is guessed, player wins, if not player lost.
 
 
 ## Features
@@ -15,7 +28,7 @@ You can access the website [here](https://travel-hunter1.herokuapp.com/).
 
 - Instructions
      - After player adds the name instructions are displayed.
-     - Give full insight of how the game is played and what you need to do to win.
+     - Gives full insight of how the game is played and what you need to do to win.
 
 - Choose a category
      - User can choose between two game categories Cities and Countries.
@@ -75,14 +88,14 @@ The site was deployed to [Heroku](https://heroku.com/) pages using following ste
    - When deployed click on view
    - If you click on settings on the main menu bar you will find your Heroku git URL
 
-    To install the required packages for this application, type the following:
-pip3 install -r requirements.txt
+    To install the required packages for this application, type the following: pip3 install -r requirements.txt
+
 import pyfiglet
 import random
 import sys
    
 
-The live site can be previewed [here](https://travel-hunter1.herokuapp.com/)
+The live site can be previewed [here](https://travel-hunter1.herokuapp.com/).
 
 ![deployment1](documentation/images/heroku-deployment1.png)
 
@@ -102,11 +115,12 @@ The live site can be previewed [here](https://travel-hunter1.herokuapp.com/)
 - [Github](https://github.com/) - used for securely storing the code online
 - [Git](https://git-scm.com/) - used for version control
 - [Gitpod](https://www.gitpod.io/) - used for online cloud IDE and development
+- [Heroku](https://heroku.com/) - platform used to deploy game to cloud online
 
 
 ## Credits and Acknowledgements
 
-- Social Media sources:
+  Social Media sources:
 - [YouTube channel Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8)
 - [YouTube channel NeuralNine](https://www.youtube.com/watch?v=5x6iAKdJB6U)
 - [YouTube channel Learn Learn Scratch Tutorials](https://www.youtube.com/watch?v=U1aUteSg2a4)
