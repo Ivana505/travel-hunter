@@ -1,3 +1,7 @@
+"""
+    Generates random value from the sequence.
+    Helps import random words.
+"""
 import random
 import sys
 import pyfiglet
@@ -80,6 +84,8 @@ def enter_check():
     """
    While true loop is making sure only one single character,
    in this case letter has been chosen by the player.
+   CREDIT: Code inspired by SIMPLECODE YouTube Channel
+   https://www.youtube.com/watch?v=q9nSmJu0cxI
     """
     input_char = input("Enter single letter: ")
 
@@ -109,6 +115,8 @@ def play_game(rand_word):
     if not guessed attempts will reduce by 1. If the word is
     guessed player wins, if not word is revealed. In both scenarios
     player is passed to game end function.
+    CREDIT: Code inspired by NeuralNine YouTube channel
+    https://www.youtube.com/watch?v=5x6iAKdJB6U
     """
     attempts = 9
     guessed_letters = []

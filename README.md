@@ -1,24 +1,26 @@
 # Travel Hunter
 Travel Hunter is a website for anyone who likes guessing games like hangman.
+You need to guess the word to get to your destination.
 You can access the website [here](https://travel-hunter1.herokuapp.com/).
 
-![main page]()
+![landing page](documentation/images/landing-page.png)
 
 
 ## Features
-- Greeting  
-    - "Good day player" greets the user.
-![greeting]()
+- Greeting and "What is your name?"
+    - "Welcome to Travel Hunter" greets the user.
+    - User can add real or fictional name for the game.
+
+![greeting](documentation/images/landing-page.png)
 
 - Instructions
-     - "Try to guess the hidden word to get tto your destination"
-![instructions]()
+     - After player adds the name instructions are displayed.
+     - Give full insight of how the game is played and what you need to do to win.
 
-- Choose category
-     - User can choose between two categories Cities and Countries.
+- Choose a category
+     - User can choose between two game categories Cities and Countries.
 
-![categories]()
-
+![instructions](documentation/images/instructions.png)
 
 # User Experience
 
@@ -37,9 +39,9 @@ The target audience are kids and adults who like hidden words type of games :
 As a user I would like to:
 
 - Have more categories to choose from.
-- Be able to play against another human player.
+- Be able to play against another human player or machine.
 - Be able to use game on different devices.
-- Be able to play game again without reloading the page. 
+- Be able to see letters already used. 
 
 
 ## Flowchart
@@ -105,16 +107,26 @@ The live site can be previewed [here](https://travel-hunter1.herokuapp.com/)
 ## Credits and Acknowledgements
 
 - Social Media sources:
-- [YouTube channel ](https://www.youtube.com/watch?v=F3odgpghXzY) for
-- [YouTube channel ](https://www.youtube.com/watch?v=vjco5yKZpU8) for 
+- [YouTube channel Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8)
+- [YouTube channel NeuralNine](https://www.youtube.com/watch?v=5x6iAKdJB6U)
+- [YouTube channel Learn Learn Scratch Tutorials](https://www.youtube.com/watch?v=U1aUteSg2a4)
+- [YouTube channel SIMPLECODE](https://www.youtube.com/watch?v=q9nSmJu0cxI)
 
   Other sources
-  - [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) helped me with creating modal box.
-  - [Stack Overflow](https://stackoverflow.com/questions/50229293/get-id-of-clicked-element-vanilla-js) to get ID of clicked element in JavaScript.
-  - [Am I reponsive](http://ami.responsivedesign.is/) to show responsiveness of the Website.
-  - [Codepen](https://codepen.io/tag/piano)
+  - [Lucidchart](https://www.lucidchart.com/pages/) for creating a flowchart for the project.
+  - [PEP8 online](http://pep8online.com/) for checking code requirements.
+  - [Stack Overflow](https://stackoverflow.com/questions/4394145/picking-a-random-word-from-a-list-in-python) for picking random word from a list.
+  - [Stack Overflow](https://stackoverflow.com/questions/58467922/how-can-i-show-the-guessed-letters-of-a-word-guesser-in-order-python) for guessing logic.
+  - [Stack Overflow](https://stackoverflow.com/questions/39199188/how-do-i-only-allow-letters-when-asking-for-a-name-in-python/39199261) for more Information about isalpha() function.
+  - [Stack Overflow](https://stackoverflow.com/questions/2070684/how-can-i-make-my-python-code-stay-under-80-characters-a-line) for explanation how connect lines longer then 80 characters.
+  - [Invent with python](https://inventwithpython.com/invent4thed/chapter8.html) for logic for asking player to enter single letter.
+  - [Icodemag](https://icodemag.com/creating-a-simple-hangman-game-in-python/) for the final reveal of the hidden word.
+  - [NEWBEDEV](https://newbedev.com/how-to-ask-a-yes-or-no-question-in-python-code-example) for yes no questions and decision making.
+  - [Hashbangcode](https://www.hashbangcode.com/article/stopping-code-execution-python) to stop the code and finish the game.
+  - [Code Grepper](https://www.codegrepper.com/code-examples/whatever/No+module+named+%27pyfiglet%27) instructions how to install pyfiglet.
+  - [Pythong for beginners](https://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python) for more Information about import random module.
 
-  I want to say thank you to my Mentor Tim for the guidance and tutor support.
+I want to say thank you to my Mentor Tim for the guidance, tutor support and special thanks to the Code Institute Slack community.
 
 ### Content
  - Content was created intentionally for the purpose of this project and this Website. Credits go to the creator of the Website.
