@@ -41,7 +41,13 @@ def welcome_message():
         if name.isalpha():
             print(f"Good day {name} !")
             print("Try to guess the hidden word to get to your destination.")
-            print("You have 8 tries.")
+            print("You have 9 tries.")
+            print(" ***Watch out*** ")
+            print("Try to remember letters you guessed.")
+            print("If you try to guess same letter twice :")
+            print("*if letter is in the word you will not loose attempt.")
+            print("*if it is not in the word you will loose attempt.")
+            print("GOOD LUCK !")
             choose_game()
         else:
             print("I do not understand, add letters only.\n")
@@ -75,14 +81,14 @@ def enter_check():
    While true loop is making sure only one single character,
    in this case letter has been chosen by the player.
     """
-    input_char = input("Enter single character: ")
+    input_char = input("Enter single letter: ")
 
     while True:
         if (input_char.lower() in "abcdefghijklmnopqrstuvwxyz"
            and len(input_char) == 1):
             break
 
-        input_char = input("Enter single character: ")
+        input_char = input("Enter single letter: ")
 
     return input_char
 
@@ -104,7 +110,7 @@ def play_game(rand_word):
     guessed player wins, if not word is revealed. In both scenarios
     player is passed to game end function.
     """
-    attempts = 8
+    attempts = 9
     guessed_letters = []
     done = False
     while not done:
@@ -143,10 +149,10 @@ def game_end():
     After Y or N message is displayed.
     """
     again = input("Do you want to play again press Y or N ?\n").upper()
-    if again == 'Y':
-        print(" Yes is a good answer, enjoy playing again ! ")
+    if again.isalpha() and again == 'Y':
+        print("Yes is a good answer, enjoy playing again ! ")
         choose_game()
-    elif again == 'N':
+    elif again.isalpha() and again == 'N':
         print("Oh no ! You are leaving, I hope to see you again soon ! \n")
         goodbye_message()
     else:
