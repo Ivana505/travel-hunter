@@ -35,6 +35,26 @@ To start playing, please click [here](https://travel-hunter1.herokuapp.com/).
 
 ![instructions](documentation/images/instructions.png)
 
+- Guessing
+     - Hidden word shows with underscores. 
+     - Player needs to input single letter. If any other input is added numbers or more letters at the same time message will appear "Enter single letter"
+     - If guessed or not, word will be revealed and a question will appear asking player to play again yes or no.
+     - If yes is selected player is asked to choose category.
+     - If no is selected message "Goodbye" appears and game ends.
+
+![guessing](documentation/images/guessing.png)
+
+![input letter](documentation/images/testing-input.png)
+
+![guessed](documentation/images/guessed.png)
+
+![win](documentation/images/win.png)
+
+![yes](documentation/images/yes.png)
+
+![no](documentation/images/no.png)
+
+
 # User Experience
 
 ## Goals
