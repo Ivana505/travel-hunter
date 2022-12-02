@@ -4,7 +4,7 @@ In this game you need to guess a hidden word to get to your destination as it is
 
 You need to guess hidden European City or Country.
 
-To start playing, please click [here](https://travel-hunter1.herokuapp.com/).
+To start playing, please click [here](https://travel-hunter.onrender.com/).
 
 ![landing page](documentation/images/landing-page.png)
 
